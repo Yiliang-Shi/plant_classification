@@ -1,0 +1,18 @@
+---
+  base:
+    root: "/home/yl/projects/plant_classification"
+    random_seed: 42
+  data:
+    img_folder: "data/images"
+    annotations: "data/train.csv"
+    batch: 10
+  train:
+    tfhub_path: None
+    model: SimpleCNN.SimpleCNN
+    save_dir: "results/experiement1/checkpoint"
+    log_dir: "results/experiement1/log"
+  visualize:
+    cache: True
+    save_dir: "results/experiement1/visualization"
+    layer: -1
+    method: attention
